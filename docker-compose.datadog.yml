@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  ddagent:
+    image: datadog/docker-dd-agent@sha256:0228b88d2e09aac6d33bcc886285dd9731b67e0614cd6588b42b0c978d0b89ad
+    environment:
+      - API_KEY=${DATADOG_API_KEY}
+      - DD_APM_ENABLED=true
+      - DD_APM_NON_LOCAL_TRAFFIC=true
+    ports:
+      - "8126:8126/tcp"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "/proc/:/host/proc/:ro"
+      - "/sys/fs/cgroup/:/host/sys/fs/cgroup:ro"
