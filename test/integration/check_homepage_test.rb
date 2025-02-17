@@ -4,6 +4,6 @@ class CheckHomepageTest < ActionDispatch::IntegrationTest
   test "the homepage displays the Rails version" do
     get '/'
     assert_response :success
-    assert_text "Rails version: #{Rails::VERSION::STRING}"
+    assert_select "body > ul:nth-child(2) > li:nth-child(1)", "Rails version: #{Rails::VERSION::STRING}"
   end
 end
