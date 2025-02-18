@@ -98,7 +98,7 @@ GEM
     crass (1.0.6)
     datadog (2.10.0)
       datadog-ruby_core_source (~> 3.4)
-      libdatadog (~> 14.3.1.1.0)
+      libdatadog (~> 16.0.1.1.0)
       libddwaf (~> 1.18.0.0.0)
       logger
       msgpack
@@ -138,9 +138,9 @@ GEM
       activesupport (>= 5.0.0)
     json (2.10.1)
     language_server-protocol (3.17.0.4)
-    libdatadog (14.3.1.1.0)
-    libdatadog (14.3.1.1.0-aarch64-linux)
-    libdatadog (14.3.1.1.0-x86_64-linux)
+    libdatadog (16.0.1.1.0)
+    libdatadog (16.0.1.1.0-aarch64-linux)
+    libdatadog (16.0.1.1.0-x86_64-linux)
     libddwaf (1.18.0.0.0)
       ffi (~> 1.0)
     libddwaf (1.18.0.0.0-aarch64-linux)
