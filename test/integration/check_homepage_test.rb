@@ -4,6 +4,7 @@ class CheckHomepageTest < ActionDispatch::IntegrationTest
   test "the homepage displays the Rails version" do
     p "here I start the check homepage test"
     p "My PID is #{Process.pid}"
+    p "My current thread is #{Thread.current}"
     p "Active trace is #{Datadog::Tracing.active_trace.id}"
     get '/'
     assert_response :success
