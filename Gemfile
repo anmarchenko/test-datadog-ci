@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'datadog', require: 'datadog/auto_instrument'
+gem 'datadog', github: "DataDog/dd-trace-rb", ref: "anmarchenko/fix_rack_distributed_trace_propagation", require: 'datadog/auto_instrument'
 group :test do
   gem "datadog-ci"
 end
